@@ -384,12 +384,33 @@
             </a>
           </div>
         </div>
+
+        <div class="subscribe">
+          <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+          <form class="subscribe-form">
+            <label class="subscribe-label">
+              <input
+                class="subscribe-input"
+                type="email"
+                name="mail"
+                placeholder="E-mail"
+              />
+            </label>
+            <button type="button" class="subscribe-button">
+              <span class="subscribe-button-text">Подписаться</span>
+              <svg class="subscribe-icon">
+                <use href="./images/sprite.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
+    <!--Модальне вікно-->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-button" data-modal-close>
-          <svg class="modal-icon">
+          <svg class="modal-icon icon">
             <use href="./images/sprite.svg#icon-vector"></use>
           </svg>
         </button>
@@ -433,8 +454,8 @@
             </li>
           </ul>
           <label class="accept-checkbox">
-            <input type="checkbox" />
-            <span class="custom-checkbox"></span>
+            <input type="checkbox" class="checkbox" name="checkbox" />
+            <span class="custom-checkbox"> </span>
             <span class="checkbox-text"
               >Соглашаюсь с рассылкой и принимаю
               <a href="#" class="contract">Условия договора</a></span
